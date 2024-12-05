@@ -1,5 +1,6 @@
 import * as path from "jsr:@std/path@1";
 import { sumOf } from "jsr:@std/collections";
+import { pipe } from 'jsr:@noidet/pipe'
 
 const input = await Deno.readTextFile(
   path.join(import.meta.dirname, "input.txt"),
