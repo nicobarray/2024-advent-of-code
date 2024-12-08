@@ -220,7 +220,7 @@ export async function step2(input: string, interactive = false) {
             obstacles.add(nextPos);
           }
         } else if(typeof options.fakeObstacle !== "undefined") {
-          const prevEqual = path.indexOf(agent);
+          const prevEqual = path.lastIndexOf(agent);
           if (prevEqual !== -1) {
             const prevDir = pathDir[prevEqual];
             if (prevDir === agentCell) {
@@ -260,5 +260,5 @@ export async function step2(input: string, interactive = false) {
 
 if (import.meta.main) {
   // await step1(example);
-  await step2(_example1, true);
+  await step2(example, true);
 }
