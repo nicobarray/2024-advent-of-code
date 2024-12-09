@@ -13,3 +13,5 @@ export const patmatch =
     return obj.find(([k]) => k === value)?.[1] ?? defaultValue;
   };
 export const div = (a: number) => (b: number) => Math.floor(a / b);
+export const sum = (a: number, b: number) => a + b
+export const sumAll = (ns: number[]) => ns.reduce(sum, 0)
