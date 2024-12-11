@@ -15,6 +15,7 @@ export const patmatch =
 export const div = (a: number) => (b: number) => Math.floor(a / b);
 export const sum = (a: number, b: number) => a + b;
 export const sumAll = (ns: number[]) => ns.reduce(sum, 0);
+export const range = (n: number) => [...new Array(n).keys()];
 
 export class Map<T> {
   width: number;

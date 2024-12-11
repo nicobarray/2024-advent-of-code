@@ -1,5 +1,4 @@
 import * as path from "jsr:@std/path@1";
-import { pipe } from "jsr:@noidet/pipe@0.1.0";
 import { sleep } from "https://deno.land/x/sleep/mod.ts";
 import { patmatch } from "../../../../util.ts";
 
