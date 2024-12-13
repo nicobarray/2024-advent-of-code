@@ -1,6 +1,7 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@cm-iv/queue@*": "1.0.0",
     "jsr:@noidet/pipe@*": "0.1.0",
     "jsr:@noidet/pipe@0.1.0": "0.1.0",
     "jsr:@std/assert@*": "1.0.8",
@@ -13,6 +14,9 @@
     "npm:lodash@*": "4.17.21"
   },
   "jsr": {
+    "@cm-iv/queue@1.0.0": {
+      "integrity": "0dc1da37987077e765240a73f7164196fca065ce585fcb542f8db50831078f0a"
+    },
     "@noidet/pipe@0.1.0": {
       "integrity": "c86d6c173c41731dcee75919414f3a9456c3bf35c87a826c1b0506219a4fab48"
     },

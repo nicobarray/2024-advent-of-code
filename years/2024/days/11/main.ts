@@ -1,6 +1,5 @@
 import * as path from "jsr:@std/path@1";
 import { sumOf } from "jsr:@std/collections";
-import { range } from "../../../../util.ts";
 
 async function solve(input: string, times: number) {
   const blink = (n: number) => {
@@ -58,6 +57,6 @@ if (import.meta.main) {
     path.join(import.meta.dirname, "input.txt"),
   );
 
-  // await step1(file);
+  await step1(file);
   await step2(file);
 }
