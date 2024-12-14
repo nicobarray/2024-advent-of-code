@@ -8,6 +8,9 @@ export const sub =
   (vec: Vec) => (dir: Vec): Vec => [vec[0] - dir[0], vec[1] - dir[1]];
 export const mult =
   (factor: number) => (vec: Vec): Vec => [vec[0] * factor, vec[1] * factor];
+export const len = (vec: Vec) =>
+  Math.sqrt(Math.pow(vec[0], 2) + Math.pow(vec[1], 2));
+
 export const is = <T>(a: T) => (b: T) => a === b;
 export const not = <T>(fn: (a: T) => boolean) => (a: T) => !fn(a);
 export const patmatch =
